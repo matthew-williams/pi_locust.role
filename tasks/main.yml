@@ -1,0 +1,17 @@
+---
+- name: install python
+  apt:
+    name: "{{ locust_packages }}"
+    state: present
+    update_cache: yes
+  tags: [Package Installation]
+
+- name: install locust
+  pip:
+    name: "{{ locust_pip_packages }}"
+    state: present
+  tags: [Package Installation]
+
+- name: Execute the command in remote shell; stdout goes to the specified file on the remote
+  shell: locust -V
+  tags: [Locust]

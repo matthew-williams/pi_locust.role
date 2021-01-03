@@ -1,0 +1,6 @@
+locust_packages:
+ - python3
+
+locust_pip_packages:
+ - setuptools
+ - locust

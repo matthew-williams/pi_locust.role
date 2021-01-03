@@ -1,0 +1,11 @@
+---
+galaxy_info:
+  author: matthew-williams
+  description: Install locust swarm on raspberry pi 4's
+  min_ansible_version: 2.7
+  platforms:
+  - name: Ubuntu
+    versions:
+    - 18.04
+    - 20.04
+dependencies: []
