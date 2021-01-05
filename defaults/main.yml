@@ -1,6 +1,12 @@
 locust_packages:
  - python3
+ - python3-pip
 
 locust_pip_packages:
  - setuptools
  - locust
+
+locust_workers: 3
+locust_users: 1000
+locust_runs: 100
+locust_runtime: "1h30m"

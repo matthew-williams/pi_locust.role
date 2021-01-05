@@ -12,6 +12,6 @@
     state: present
   tags: [Package Installation]
 
-- name: Execute the command in remote shell; stdout goes to the specified file on the remote
+- name: Check Locust for function
   shell: locust -V
   tags: [Locust]
